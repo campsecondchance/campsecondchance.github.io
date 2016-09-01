@@ -1,0 +1,205 @@
+.JobCard {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.JobAnimTile {
+    display: block;
+    height: 100%;
+    flex: 1;
+}
+
+.JobInnerCard{
+    flex: 3;
+    height: 100%;
+    color: white;
+    font-size: medium;
+}
+
+.JobInnerCard h1{
+    text-align: center;
+    font-size: 1.6em;
+    /*background-color: blue;*/
+}
+
+
+
+.JobInnerCard h1{
+    
+    background-image: url(/assets/images/Headerline.png);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.JobInnerCard h1::first-line {
+    background-color: #2a87ad;
+}
+
+.JobInnerCard h2{
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.JobInnerCard p{
+    margin: .5em;
+}
+
+.JobInnerCard p {
+    font-size: small;
+}
+
+.CardFrontRight{
+border-style: solid;
+min-height: 140px;
+border-width: 4px 60px 11px 125px;
+-moz-border-image: url(/assets/images/CardFront-Right.png) 4 60 11 125 stretch;
+-webkit-border-image: url(/assets/images/CardFront-Right.png) 4 60 11 125 stretch;
+-o-border-image: url(/assets/images/CardFront-Right.png) 4 60 11 125 stretch;
+border-image: url(/assets/images/CardFront-Right.png) 4 60 11 125 fill stretch;
+margin-left: -80px;
+}
+
+.CardFrontLeft{
+min-width: 115px;
+min-height: 140px;
+align-content: center;
+justify-content: center;
+border-style: solid;
+border-width: 4px 4px 12px 6px;
+-moz-border-image: url(/assets/images/CardFront-Left.png) 4 4 12 6 stretch;
+-webkit-border-image: url(/assets/images/CardFront-Left.png) 4 4 12 6 stretch;
+-o-border-image: url(/assets/images/CardFront-Left.png) 4 4 12 6 stretch;
+border-image: url(/assets/images/CardFront-Left.png) 4 4 12 6 fill stretch;
+}
+
+.CardFrontLeft img{
+    display: block;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.CardBack{
+border-style: solid;
+border-width: 4px 62px 11px 6px;
+-moz-border-image: url(/assets/images/CardBack.png) 4 62 11 6 stretch;
+-webkit-border-image: url(/assets/images/CardBack.png) 4 62 11 6 stretch;
+-o-border-image: url(/assets/images/CardBack.png) 4 62 11 6 stretch;
+border-image: url(/assets/images/CardBack.png) 4 62 11 6 fill stretch;
+}
+
+.DataPoints {
+    position: relative;
+    bottom: -4px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.DataPoints .Data {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.Data {
+    position: relative;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.Data:first-of-type {
+    border-left: 2px solid white;
+}
+
+.Data:last-of-type {
+    border-right: 2px solid white;
+}
+
+.Data header{
+    position: absolute;
+    background-color:  #2a87ad;
+    top: -.5em;
+    padding: 0px 4px;
+    left: 20%;
+    right: 20%;    
+}
+
+.Data:first-of-type header{
+    left: 1em;
+    right: auto;
+}
+
+.Data:last-of-type header{
+    right: 1.5em;
+    left: auto;
+}
+
+.LaborKey {
+    flex: 2;
+    background-color:  rgb(152, 176, 111);
+    color: white;
+    border-radius: 0 50px 0 0;
+    padding: 5px;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
+}
+
+.LaborKey header {
+    font-weight: bold;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.GreenHeaderBox {
+    border: 1px solid white;
+    padding: 5px;
+    position: relative;
+    margin: 5px;
+}
+
+.GreenHeaderBox header{
+    position: absolute;
+    background-color: rgb(152, 176, 111);
+    top: -.5em;
+    padding: 0px 4px;
+    width: auto;
+    left: 10%;
+}
+
+.GreenHeaderBox main{
+    padding-top: 10px;
+    font-size: small;
+}
+
+.LaborDescription {
+    flex: 3;
+    padding: 5px;
+}
+
+.flexbox {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
