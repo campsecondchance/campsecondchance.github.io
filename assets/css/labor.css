@@ -54,13 +54,9 @@
     margin: .5em;
 }
 
-.JobInnerCard p {
-    font-size: small;
-}
-
 .CardFrontRight{
 border-style: solid;
-min-height: 140px;
+min-height: 110px;
 border-width: 4px 60px 11px 125px;
 -moz-border-image: url(/assets/images/CardFront-Right.png) 4 60 11 125 stretch;
 -webkit-border-image: url(/assets/images/CardFront-Right.png) 4 60 11 125 stretch;
@@ -71,7 +67,7 @@ margin-left: -80px;
 
 .CardFrontLeft{
 min-width: 115px;
-min-height: 140px;
+min-height: 110px;
 align-content: center;
 justify-content: center;
 border-style: solid;
