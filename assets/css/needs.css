@@ -1,11 +1,10 @@
-
 section.needs {
   padding: 10px;
   padding-top: 0px;
   margin:5px 0px;
   color: white;
   box-sizing: border-box;
-  flex: 1 0 50%;
+
 }
 
 section.Urgent {
@@ -92,3 +91,24 @@ section.needs h3{
   .usage {
       font-weight: bold;
   }
+
+  @media all and (orientation: landscape) {
+  section.needs{
+      flex: 1 0 50%;
+  }
+
+   
+  
+}
+
+
+@media all and (orientation: portrait){
+    section.needs{
+      flex: 1 0 100%;
+  }
+
+ h3.NeedTitle{
+    padding-top: 2em;
+  }
+
+}

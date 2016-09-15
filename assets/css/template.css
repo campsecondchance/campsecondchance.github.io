@@ -96,18 +96,8 @@ h3{
 .FBLink img{
   height: 5vh;
 }
-.Nav{
-  position: absolute;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: flex-end;
-  top: 6.8em;
-  right: 1.5vw;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  z-index: 100;
-  align-items: baseline;
-}
+
+
 .Alert{
   display: block;
   background-color: #2a87ad;
@@ -126,29 +116,84 @@ h3{
   color: #003333;
 }
 
-.NavBar {
-  box-sizing: border-box;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: flex-end;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(51, 51, 51);
-  background-color: rgb(152, 176, 111);
-  box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
-  color: rgb(255, 255, 255);
+.NavBar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
-.NavBar a{
-  color: rgb(255, 255, 255);
-  display: block;
-  text-decoration: none;
-  padding: 4px 10px;
-  font-size: 1.3em;
-}
+
 .NavBar a:hover {
   color: #726e60;
   background-color: #b6dc76;
 }
+
+@media screen and (orientation: landscape){
+  .Nav{
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    top: 6.8em;
+    right: 1.5vw;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    z-index: 100;
+    align-items: baseline;
+  }
+
+  .NavBar {
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(51, 51, 51);
+    background-color: rgb(152, 176, 111);
+    box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
+    color: rgb(255, 255, 255);
+  }
+  .NavBar a{
+    display: block;
+    padding: 4px 10px;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (orientation: portrait){
+    .Nav{
+      position: relative;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      z-index: 100;
+      align-items: baseline;
+    }
+
+  .NavBar {
+    color: red !important;
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(51, 51, 51);
+    background-color: rgb(152, 176, 111);
+    box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
+    color: rgb(255, 255, 255);
+  }
+  .NavBar a{
+    color: red !important;
+
+    flex-basis: 100%;
+    display: block;
+    padding: 1em;
+    font-size: 1em;
+  }
+}
+
 
 .Main{
   left: 0px;
