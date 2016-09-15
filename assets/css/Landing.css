@@ -1,0 +1,139 @@
+.Landing {
+    margin:0;
+    padding:0;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background: url(/assets/images/CampHeroSplash.jpg) no-repeat top left fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/images/CampHeroSplash.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/images/CampHeroSplash.jpg', sizingMethod='scale')";
+    background-size: cover;
+}
+
+.LandingNav {
+    display: block;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+.Description {
+    width: 90%;
+    margin: auto;
+    overflow-y: auto;
+    background-color: white;
+    box-shadow: 3px 3px black;
+    padding: 1em;
+}
+
+@media screen and (orientation: portrait) and (max-height:800px){
+    .Landing
+    {
+        flex-direction: column;
+    }
+    .VideoContainer
+    {
+        display: none;
+    }
+
+    .Description h1{
+        font-size: 1.5em;
+    }
+
+    .LandingNav {        
+        padding: .5em;
+        line-height: 1em;
+        font-size: 1em;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-height:801px){
+    .Landing
+    {
+        flex-direction: column;
+    }
+    .VideoContainer
+    {
+        display: none;
+    }
+
+    .Description h1{
+        font-size: 2em;
+    }
+
+    .LandingNav {        
+        padding: .75em;
+        line-height: 1.5em;
+        font-size: 2em;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px){
+    .Landing{
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .VideoContainer {
+        margin: 2em;
+        padding: 0;
+    }
+
+    .LandingNavContainer, .Description {
+        display: none;
+    }
+
+}
+
+@media screen and (orientation: landscape) and (min-width: 801px){
+    .Landing{
+        flex-direction: row;
+        min-height: 100vh;
+    }
+
+    .LandingNavContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Description {
+        flex: 1;
+        margin-left: 3em;
+    }
+
+    .VideoContainer {
+        height: 100vh;
+        flex: 1;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Video{
+        
+        display: block;
+        flex: 0 0 350px;
+    }
+
+    .LandingNav {
+        padding: .5em;
+        line-height: 1em;
+        font-size: 2em;
+    }
+
+    .About {
+        display: none;
+    }    
+}
